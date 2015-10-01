@@ -173,10 +173,10 @@ postheadspace=1em
 \renewcommand{\floatpagefraction}{.8} % página terá apenas floats se o float ocupar pelo menos 80% da página
 
 \renewcommand{\part}{% não usado no texto, só para algumas páginas (resumo, abstract, agradecimentos...)
-\@startsection{part}{-1}{0pt}{2\baselineskip}{2\baselineskip}{\cleardoublepage\fontsize{12pt}{14.4pt}\centering\bf\MakeUppercase}}
+\@startsection{part}{-1}{0pt}{\baselineskip}{\baselineskip}{\cleardoublepage\fontsize{12pt}{14.4pt}\centering\bf\MakeUppercase}}
 
 \renewcommand{\chapter}{\clearpage\pagestyle{fancy}%
-\@startsection{chapter}{0}{0pt}{0pt}{1.5cm}{\fontsize{12pt}{14.4pt}\bfseries\MakeUppercase}}
+\@startsection{chapter}{0}{0pt}{0pt}{0.7cm}{\fontsize{12pt}{14.4pt}\bfseries\MakeUppercase}}
 
 \renewcommand{\section}{%
 \@startsection{section}{1}{0pt}{\baselineskip}{\baselineskip}{\fontsize{12pt}{14.4pt}\MakeUppercase}}
@@ -225,8 +225,8 @@ postheadspace=1em
 \renewcommand{\cftpartleader}{\cftdotfill{\cftdotsep}} % pontos no sumário para partes
 \renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}} % pontos no sumário para capítulos
 
-\setlength{\cftfignumwidth}{7.2em} % espaço onde a palavra "Ilustração" é escrita
-\setlength{\cfttabnumwidth}{5.7em} % espaço onde a palavra "Tabela" é escrita
+\setlength{\cftfignumwidth}{7.3em} % espaço onde a palavra "Ilustração" é escrita
+\setlength{\cfttabnumwidth}{5.8em} % espaço onde a palavra "Tabela" é escrita
 \renewcommand{\cftfigpresnum}{Ilustra\c{c}\~ao } % escrita que precede cada entrada na lista de ilustrações
 \renewcommand{\cfttabpresnum}{Tabela } % escrita que precede cada entrada na lista de tabelas
 \renewcommand{\cftfigaftersnum}{ --} % traço na frente da escrita que precede as entradas na lista de ilustrações
@@ -344,9 +344,9 @@ postheadspace=1em
 \end{flushleft}
 }
 
-\newenvironment{resumo}{\part*{Resumo}\pagestyle{empty}\begin{spacing}{1.1}\noindent\normalsize}{\end{spacing}\cleardoublepage\pagestyle{fancy}}
+\newenvironment{resumo}{\part*{Resumo}\pagestyle{empty}\begin{spacing}{1.2}\normalsize}{\end{spacing}\cleardoublepage\pagestyle{fancy}}
 
-\renewenvironment{abstract}{\selectlanguage{english}\part*{Abstract}\pagestyle{empty}\begin{spacing}{1.1}\noindent\normalsize}{\end{spacing}\cleardoublepage\pagestyle{fancy}\selectlanguage{portuges}}
+\renewenvironment{abstract}{\selectlanguage{english}\part*{Abstract}\pagestyle{empty}\begin{spacing}{1.2}\normalsize}{\end{spacing}\cleardoublepage\pagestyle{fancy}\selectlanguage{portuges}}
 
 \newenvironment{agradecimentos}{\part*{Agradecimentos}\pagestyle{empty}}{\cleardoublepage\pagestyle{fancy}}
 
